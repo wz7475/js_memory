@@ -1,3 +1,6 @@
+$yellow : rgb(255, 255, 0);
+$dimention : 100px;
+
 *{
     margin: 0;
     padding: 0;
@@ -7,4 +10,20 @@
 body, html{
     background-color: #404040;
     color: #fff;
+    font-size: 20px;
+}
+
+main{
+    width: 90%;
+    max-width: 460px;
+    margin: 0 auto;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+
+    .card{
+        max-width: $dimention;
+        background-color: $yellow;
+    }
 }

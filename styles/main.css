@@ -8,5 +8,23 @@
 body, html {
   background-color: #404040;
   color: #fff;
+  font-size: 20px;
+}
+
+main {
+  width: 90%;
+  max-width: 460px;
+  margin: 0 auto;
+  background-color: aqua;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+main .card {
+  max-width: 100px;
+  background-color: yellow;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,3 @@
-take images from font awesome script or sv
+take images from font awesome script or svg
 
 link some font
