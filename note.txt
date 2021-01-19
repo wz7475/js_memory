@@ -1,3 +1,5 @@
-take images from font awesome script or svg
+make media queries based on height for smartphones
 
-link some font
+make media queries based on width for bigger screens
+
+mechanism for inverting cards

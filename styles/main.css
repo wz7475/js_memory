@@ -9,22 +9,36 @@ body, html {
   background-color: #404040;
   color: #fff;
   font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  margin: 1rem;
 }
 
 main {
   width: 90%;
   max-width: 460px;
   margin: 0 auto;
-  background-color: aqua;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
 }
 
 main .card {
   max-width: 100px;
-  background-color: yellow;
+  background-color: #f0dab5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .card img {
+  width: 100%;
+  padding: 4px;
+  height: 80px;
 }
 /*# sourceMappingURL=main.css.map */
