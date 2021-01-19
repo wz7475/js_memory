@@ -31,14 +31,16 @@ main {
 main .card {
   max-width: 100px;
   background-color: #f0dab5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  border-radius: .5rem;
 }
 
 main .card img {
   width: 100%;
   padding: 4px;
   height: 80px;
+}
+
+main .hidden {
+  opacity: 0%;
 }
 /*# sourceMappingURL=main.css.map */

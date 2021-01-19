@@ -63,5 +63,18 @@ const generade_cards = () =>{
     } 
 }   
 
+const listerns = () =>{
+    cards = document.querySelectorAll(".card img");
+    cards.forEach(i => {
+        i.addEventListener("click", function(){
+            i.classList.toggle("hidden");
+        })
+    });
+}
 
-window.addEventListener("load", generade_cards);
+
+window.addEventListener("DOMContentLoaded", function(){
+    //window.addEventListener("load", generade_cards);
+    generade_cards();
+    listerns();
+})

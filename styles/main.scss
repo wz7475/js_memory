@@ -32,11 +32,15 @@ main{
     .card{
         max-width: $dimention;
         background-color: $yellow;
-        display: flex;
+        border-radius: .5rem;
         img{
             width: 100%;
             padding: 4px;
             height: 80px;
         }
+    }
+
+    .hidden{
+        opacity: 0%;
     }
 }
