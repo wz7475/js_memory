@@ -33,11 +33,9 @@ main{
         max-width: $dimention;
         background-color: $yellow;
         border-radius: .5rem;
-        img{
-            width: 100%;
-            padding: 4px;
-            height: 80px;
-        }
+        height: 80px;
+        background-repeat: no-repeat;
+        
     }
 
     .hidden{

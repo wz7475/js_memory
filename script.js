@@ -58,7 +58,8 @@ const generade_cards = () =>{
         img.src = `img/${translator[tab[i]]}`;
         card.id = i;
         card.className = "card";
-        card.appendChild(img);
+        card.style.cssText = `background-image: url(img/${translator[tab[i]]});`;
+        //card.appendChild(img);
         main.appendChild(card);
     } 
 }   
