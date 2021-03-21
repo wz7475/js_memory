@@ -71,6 +71,9 @@ const listerns = () =>{
         i.addEventListener("click", function(){
             i.classList.toggle("hidden");
         })
+        i.addEventListener("click", function(){
+            alert(this.id);
+        })
     });
 }
 
