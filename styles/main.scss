@@ -29,6 +29,10 @@ main{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.5rem;
 
+    .active_card:hover {
+        cursor: pointer;
+    }
+
     .card{
         max-width: $dimention;
         background-color: $yellow;

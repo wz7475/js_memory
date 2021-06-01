@@ -28,6 +28,10 @@ main {
   grid-gap: 0.5rem;
 }
 
+main .active_card:hover {
+  cursor: pointer;
+}
+
 main .card {
   max-width: 100px;
   background-color: #f0dab5;

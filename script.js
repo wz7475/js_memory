@@ -9,6 +9,17 @@ const translator = {
     8 : "rook.svg"
 }
 
+const class_translator = {
+    1 : "bishop",
+    2 : "board",
+    3 : "king",
+    4 : "knight",
+    5 : "pawn",
+    6 : "pieces",
+    7 : "queen",
+    8 : "rook"
+}
+
 const generate_array = () =>{
     const get_random = () => {
         let min = 1;
@@ -56,8 +67,12 @@ const generade_cards = () =>{
         let card = document.createElement("div");
         let img = document.createElement("img");
         img.src = `img/${translator[tab[i]]}`;
+        img.classList.add("hidden");
         card.id = i;
+        
         card.className = "card";
+        card.classList.add(class_translator[i]);
+        card.classList.add("active_class");
         card.appendChild(img);
         //card.style.cssText = `background-image: url(img/${translator[tab[i]]});`;
         //card.appendChild(img);
@@ -71,9 +86,9 @@ const listerns = () =>{
         i.addEventListener("click", function(){
             i.classList.toggle("hidden");
         })
-        i.addEventListener("click", function(){
-            alert(this.id);
-        })
+        // i.addEventListener("click", function(){
+        //     alert(i.classList);
+        // })
     });
 }
 
